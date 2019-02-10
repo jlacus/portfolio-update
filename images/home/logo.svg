@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-135.000000, -33.000000)">
+            <g id="nav" transform="translate(135.000000, 33.000000)">
+                <g id="Group-2">
+                    <rect id="Rectangle" fill="#007BFF" fill-rule="nonzero" x="0" y="0" width="60" height="60" rx="5"></rect>
+                    <path d="M27.36,16.2709966 L27.36,10 L36,10 L36,16.2709966 L27.36,16.2709966 Z M27.4036364,50 C26.0945455,50 25.0036364,49.8208287 24,49.6864502 L24,44.0425532 C24.3490909,44.087346 24.7418182,44.087346 25.0909091,44.087346 C26.7054545,44.087346 27.5345455,43.3706607 27.5345455,41.2653975 L27.5345455,18.4658455 L35.8254545,18.4658455 L35.8254545,41.6237402 C35.8254545,47.7603583 32.7709091,50 27.4036364,50 Z" id="j" stroke="#FFFFFF" stroke-width="0.75"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

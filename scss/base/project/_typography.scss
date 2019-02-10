@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+
+
+
+@font-face {
+  font-family: gotham;
+  src: url('../fonts/GothamHTF-Black.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url('../fonts/GothamHTF-bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: gotham;
+  src: url('../fonts/GothamHTF-Book.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: gotham;
+  src: url('../fonts/GothamHTF-Medium.otf');
+  font-weight: 600;
+}
+
+
+
+
+
+h1 {
+	font-size: 3.75rem;
+	font-family: gotham, sans-serif;
+	font-weight: 900;
+	line-height: 18px;
+}
+h2 {
+	font-size: 2rem;
+	font-family: 'Gotham', sans-serif;
+	line-height: 42px;
+}
+h3 {
+	font-size: 1.5rem;
+	font-family:'Gotham', sans-serif;
+	line-height: 18px;
+}
+h4 {
+	font-size: 1.125rem;
+	font-family:'Roboto', serif;
+	line-height: 18px;
+}
+h5 {
+	font-size: 0.875rem;
+	line-height: 18px;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+li {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	font-family:'Roboto', sans-serif;
+}
+span {
+	font-family:'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	
+}
+
+
+.primary_btn {
+	font-size: 15px;
+	padding: 12px 36px;
+	font-weight: 600;
+	transition: .2s;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30), 0 2px 7px 0 rgba(0,0,0,0.20);
+	border-radius: 6px;
+	&:hover {
+		background-color: darken($fos-blue, 10);
+		transition: .2s;
+	}
+}
+
+
+
+// Header font styles
+$header-font-family: 'Roboto', sans-serif, serif;
+$header-font-weight: 400;
+$header-font-style: normal;
+$header-font-color: #000000;
+$header-line-height: 1.4;
+$header-top-margin: .2rem;
+$header-bottom-margin: .5rem;
+$header-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+$h1-font-size: 72px;
+$h2-font-size: rem-calc(37);
+$h3-font-size: 1.5rem;
+$h4-font-size: rem-calc(21);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+$h1-font-size: rem-calc(37);
+$h2-font-size: rem-calc(28);
+$h3-font-size: rem-calc(24);
+$h4-font-size: rem-calc(21);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+// We use these to control header size reduction on small screens
+$h1-font-reduction: rem-calc(17);
+$h2-font-reduction: rem-calc(16);
+$h3-font-reduction: rem-calc(9);
+$h4-font-reduction: rem-calc(5);
+$h5-font-reduction: 0;
+$h6-font-reduction: 0;
+
+// A general <small> styling
+$small-font-size: 70%;
+$small-font-color: scale-color(#000000, $lightness: 35%);
+
+// We use these to style paragraphs
+$paragraph-font-family: inherit;
+$paragraph-font-weight: inherit;
+$paragraph-font-size: 1rem;
+$paragraph-line-height: 1.6;
+$paragraph-margin-bottom: rem-calc(20);
+$paragraph-aside-font-size: rem-calc(14);
+$paragraph-aside-line-height: 1.35;
+$paragraph-aside-font-style: italic;
+$paragraph-text-rendering: optimizeLegibility;
+
+
+
+

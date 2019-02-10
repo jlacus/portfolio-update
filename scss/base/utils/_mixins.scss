@@ -1,0 +1,89 @@
+@mixin circle-image($dim) {
+    width: $dim;
+    height: $dim;
+    overflow: hidden;
+    border-radius: 50%;
+    img{
+        left: -2%;
+        max-width: none;
+        position: relative;
+        width: 104%;
+        display: block;
+        top: -2%;
+    }
+    &.landscape {
+        img{
+            height: 100%;
+            margin: auto;
+            width: initial;
+            left: 50%;
+            top: 0%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+//vertical aligns with a variable to adjust positioning
+//must add to parent element @include transform-style(preserve-3d);
+@mixin vertical-align($percentage-to-move) {
+    position: relative;
+    top: 50%;
+    transform: translateY($percentage-to-move);
+}
+
+//use this mixin when using css3 calc
+@mixin calc($property, $expression) { 
+    #{$property}: -webkit-calc(#{$expression}); 
+    #{$property}: calc(#{$expression}); 
+} 
+
+//Overrides compass box-sizing mixin to avoid compass watch warnings
+@mixin box-sizing($box-model: $default-box-sizing) {
+  @if type-of($box-model) == string {
+    $box-model: unquote($box-model);
+  }
+  @include prefixed-properties(css3-boxsizing, $box-sizing-support-threshold, (box-sizing: $box-model));
+}
+
+@mixin clearfix{
+    overflow: hidden;
+}
+
+@mixin container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1200px;
+}
+
+@mixin containerXL {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1400px;
+}
+
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url($file + '.' + $type);
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx){
+    & {
+      background-image: url($file + '@2x.' + $type);
+      -webkit-background-size: $width $height;
+      -moz-background-size: $width $height;
+      -o-background-size: $width $height;
+      background-size: $width $height;
+    }
+  }
+}
+%vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+

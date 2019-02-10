@@ -1,0 +1,245 @@
+.container {
+	@include container();
+}
+
+a.nav_item.active_header {
+    color: #2f3135 !important;
+    font-weight: 600;
+}
+.active_header {
+	color: #2f3135;
+	.nav_item a { font-weight: 600; }
+		&:before {
+		 content: "";
+	     position: absolute;
+	     left: 0px;
+	     bottom: -8px;
+	     width: 30%;
+	     border-bottom: 4px solid #2F3135;
+	     border-radius: 2px;
+	     border-top-left-radius: 2px;
+	     color: #2f3135;
+		}
+}
+
+header {
+	height: auto;
+	padding: 30px 0;
+
+	.content {
+		@include span(12 first);
+
+		.logo {
+			display: inline-block;
+		}
+		.nav_group {
+			display: inline-block;
+			padding-left: 30px;
+
+			a {
+				display: inline-block;
+			    color: #62666F;
+			    left: 0;
+			    position: relative;
+			    padding-right: 18px;
+				&:hover {
+					color: #2F3135;
+				}
+				&:active {
+					color: #2F3135 ;
+				}
+				// &:before {
+				//   content: "";
+			 //      position: absolute;
+			 //      left: 0px;
+			 //      bottom: -3px;
+			 //      height: 5px;
+			 //      width: 26%;
+			 //      border-bottom: 3px solid #2F3135;
+			 //      border-bottom-right-radius: 1px;
+			 //      border-bottom-left-radius: 1px;
+			 //      border-top-left-radius: 1px;
+			 //      border-top-right-radius: 1px;
+				// }
+			}
+		}
+		.primary_btn {
+			@include span (2 last);
+			background: #FFFFFF;
+			box-shadow: 0 1px 4px 0 rgba(0,0,0,0.20);
+			padding: 12px 50px;
+			border-radius: 5px;
+			color: #007BFF;
+			text-align: center;
+			letter-spacing: 0.2px;
+		}
+	}
+}
+
+#intro {
+	margin-top: -120px;
+	background-image: url('../images/home/bg.png');
+    background-position: top right;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-size: calc(100% / 2);
+
+    .welcome {
+    	padding-top: 200px;
+
+    	h1 {
+    		font-family: 'gotham', sans-serif;
+    		line-height: 67px;
+    	}
+
+    	.info {
+    		@include span (5 first);
+    		color: #62666F;
+    		font-size: 18px;
+    		letter-spacing: 0.2px;
+    		padding-top: 24px;
+    		line-height: 30px;
+    		font-weight: 100;
+    	}
+    }
+}
+
+#skills {
+
+	.skill_box {
+		@include span(12 first);
+		background: #FFFFFF;
+		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+		padding: 48px 0 34px;
+		border-radius: 5px;
+
+		.skill_item {
+			@include gallery(2 of 12);
+			text-align: center;
+
+			p {
+				padding-top: 12px;
+				color: #62666F;
+			}
+		}
+	}
+}
+
+#projects {
+	padding: 200px 0 120px;
+
+	background-image: url('../images/home/bottom.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: calc(100% / 1);
+
+
+	.project_title {
+		h3 {
+			text-align: center;
+			font-family: 'Gotham', sans-serif;
+			font-size: 24px;
+			letter-spacing: 0.2px;
+			line-height: 26px;
+			padding-bottom: 42px;
+		}
+	}
+	.project_group {
+
+		.project_item {
+			@include span (3 first);
+			padding: 20px;
+			background: #FFFFFF;
+			box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
+			border-radius: 10px;
+
+			.project_img {
+				height: 264px;
+				background-color: #007BFF;
+				border-radius: 5px;
+			}
+			h4 {
+				color: #2F3135;
+				font-family: 'Gotham', sans-serif;
+				padding: 18px 0 12px;
+			}
+			span {
+				font-size: 13px;
+				font-family: 'Roboto', sans-serif;
+				color: #62666F;
+				text-transform: none;
+				font-weight: 300;
+			}
+			&:nth-child(2){
+				.project_img {
+					background-color: #00E3FF;
+				}
+			}
+			&:nth-child(3){
+				.project_img {
+					background-color: #00FFD2;
+				}
+			}
+			&:nth-child(4){
+				@include span (3 last);
+				.project_img {
+					background-color: #00FF9C;
+				}
+			}
+
+			.project_img {
+				height: 264px;
+				background-color: #007BFF;
+				border-radius: 5px;
+			}
+
+		}
+	}
+}
+
+footer {
+	background-color: #2F3135;
+	padding: 48px 0 60px;
+
+	.social_group {
+		text-align: center;
+		a {
+			display: inline-block;
+			padding: 0 3px;
+		}
+	}
+	.footer_nav {
+		text-align: center;
+		padding: 24px 0 42px;
+		a {
+			display: inline-block;
+			color: #ffffff;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+			padding: 0 12px;
+		}
+	}
+	.copyright {
+		text-align: center;
+		span {
+			color: #828385;
+			font-family: 'PT Mono', serif;
+			font-size: 12px;
+			text-transform: none;
+		}
+	}
+}
+
+.active {
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
